@@ -1,0 +1,14 @@
+body {
+   
+    color: darkblue;
+
+}
+
+.jumbotron-fluid {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    background-color: darkblue;
+    color: gray;
+
+}
