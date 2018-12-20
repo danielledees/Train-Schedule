@@ -7,8 +7,10 @@
     <title>Train Schedule</title>
 
 <!--Link to jQuery-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+<!--Link to moment.js-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
 <!--Link to reset css-->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -33,105 +35,73 @@
 <div class="container">
 <!--Jumbotron-->
 
-            <div class="jumbotron jumbotron-fluid">
-                    <div class="container">
-                      <h1 class="display-4">Train Schedule</h1>
-                      <p class="lead">All Aboard!</p>
-                    </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-
-              
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Train Schedule</h1>
+                <p class="lead">All Aboard!</p>
+        </div>
+    </div>
     
 <!--Train Schedule Table-->
 
-            <div class="card md-4">
-                <div class="card-header">Current Train Schedule</div>
-                <div class="card-body">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">Train Name</th>
-                                <th scope="col">Destination</th>
-                                <th scope="col">Frequency (mins)</th>
-                                <th scope="col">Next Arrival</th>
-                                <th scope="col">Minutes Away</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">NYC Express</th>
-                                <td>New York City</td>
-                                <td>10</td>
-                                <td>12:00</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">NWK Express</th>
-                                <td>Newark, NJ</td>
-                                <td>15</td>
-                                <td>01:00</td>
-                                <td>10</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">BOS Express</th>
-                                <td>Boston, MA</td>
-                                <td>20</td>
-                                <td>13:00</td>
-                                <td>15</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">JAX Express</th>
-                                <td>Jacksonville, FL</td>
-                                <td>40</td>
-                                <td>23:00</td>
-                                <td>30</td>
-                            </tr>
-                        </tbody>
+    <div class="card md-4">
+        <div class="card-header">Current Train Schedule</div>
+            <div class="card-body">
+                <table class="table table-striped" id="train-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (mins)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
                   </table>
                 </div>
             </div>
-        </div>
-    </div>     
+        
+         
 
 <br>
 <!--Add Train Form-->
 
 
-        <div class="row">
-            <div class="col-md-12">
+    <div class="row">
+        <div class="col-md-12">
 
            
-            <div class="card md-4">
-                    <div class="card-header">Add Train</div>
-                    <div class="card-body">
-                <form class="form-box">
-                    <div class="form-group">
-                        <label for="train-name">Train Name</label>
-                        <input type="text" class="form-control" id="train-name-input"> 
-                    </div>
-                    <div class="form-group">
-                        <label for="destination">Destination</label>
-                        <input type="text" class="form-control" id="destination-input">
-                    </div>
-                    <div class="form-group">
-                        <label for="destination">First Train Time (HH:mm - Military Time)</label>
-                        <input type="text" class="form-control" id="first-train-input">
-                    </div>
-                    <div class="form-group">
-                        <label for="destination">Frequency (mins)</label>
-                        <input type="text" class="form-control" id="freq-input">
-                    </div>
-                    <button type="submit" id="add-train-btn" class="btn btn-primary">Submit</button>
-                </form>
+        <div class="card md-4">
+            <div class="card-header">Add Train</div>
+                <div class="card-body">
+                    <form class="form-box">
+                        <div class="form-group">
+                            <label for="train-name">Train Name</label>
+                            <input type="text" class="form-control" id="train-name-input"> 
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" class="form-control" id="destination-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">First Train Time (HH:mm - Military Time)</label>
+                            <input type="text" class="form-control" id="first-train-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Frequency (mins)</label>
+                            <input type="text" class="form-control" id="freq-input">
+                        </div>
+                        <button type="submit" id="add-train-btn" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
 
+   <img id="train-image" src="assets/images/065d5ca01d2fdbb4e87439eb6783583e83c1.jpg" alt="train">
 
 </div>
     

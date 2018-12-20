@@ -1,5 +1,6 @@
 body {
-   
+    background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+
     color: darkblue;
 
 }
@@ -12,3 +13,10 @@ body {
     color: gray;
 
 }
+
+#train-image {
+    width: 1111px;
+}
+
+
+
