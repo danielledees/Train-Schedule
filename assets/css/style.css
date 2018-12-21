@@ -1,11 +1,11 @@
 body {
     background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
-
     color: darkblue;
-
+    font-family: 'Aleo', serif;
 }
 
-.jumbotron-fluid {
+
+.jumbotron {
     display:flex;
     justify-content: center;
     text-align: center;
@@ -13,6 +13,7 @@ body {
     color: gray;
 
 }
+
 
 #train-image {
     width: 1111px;
