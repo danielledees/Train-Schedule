@@ -3,4 +3,5 @@ Enter in name of train, destination, the first time it ran and the frequency - h
 
 The schedule will update with the next arrival time and how many minutes remain.
 
+Link to site: https://danielledees.github.io/Train-Schedule/
 
